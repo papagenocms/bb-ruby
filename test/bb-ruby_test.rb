@@ -349,4 +349,7 @@ class TestBBRuby < Test::Unit::TestCase
     assert_equal 'One<br />Two<br />Three lines!', 'One[br]Two[br]Three lines!'.bbcode_to_html
   end
 
+  def test_nil
+    assert_equal '', nil.bbcode_to_html
+  end
 end

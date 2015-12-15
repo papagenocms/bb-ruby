@@ -436,3 +436,23 @@ class String
     self.replace(BBRuby.to_html_with_formatting(self, tags_alternative_definition, escape_html, method, *tags))
   end
 end
+
+class NilClass
+  def bbcode_to_html(tags_alternative_definition = {}, escape_html=true, method=:disable, *tags)
+    ''
+  end
+
+  # Replace the string contents with the HTML-converted markup
+  def bbcode_to_html!(tags_alternative_definition = {}, escape_html=true, method=:disable, *tags)
+    ''
+  end
+
+  def bbcode_to_html_with_formatting(tags_alternative_definition = {}, escape_html=true, method=:disable, *tags)
+    ''
+  end
+
+  # Replace the string contents with the HTML-converted markup using simple_format
+  def bbcode_to_html_with_formatting!(tags_alternative_definition = {}, escape_html=true, method=:disable, *tags)
+    ''
+  end
+end
